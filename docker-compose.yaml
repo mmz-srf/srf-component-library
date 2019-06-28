@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  srf-component-library:
+    image: srfonline/stack-nodejs:stretch-latest
+    container_name: srf-component-library
+    volumes:
+      - ./docker/etc/supervisor/conf.d:/etc/supervisor/conf.d
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 3000:3000
