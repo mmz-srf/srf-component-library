@@ -11,4 +11,7 @@ storiesOf('Button', module)
   ))
   .add('Tiny', () => (
     <Button onClick={action('clicked')} label="Hello World!" modifier="button--tiny" />
+  ))
+  .add('Disabled', () => (
+    <Button onClick={action('clicked')} label="I am disabled :(" disabled />
   ));

@@ -2,6 +2,7 @@
 
 .button {
     font-family: $primary-font;
+    font-size: 1em;
     color: $color-text-contrast;
     background-color: $gray;
     display: inline-block;
@@ -11,6 +12,11 @@
 
     &:hover {
         color: $color-text-contrast-light;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: .5;
     }
 }
 
