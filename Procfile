@@ -1,2 +1,2 @@
 web: npm run start
-storybook: npm run storybook
+storybook: npm run build-storybook
